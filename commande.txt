@@ -1,0 +1,805 @@
+user@DESKTOP-DK0U149 MINGW64 ~/Desktop/my project (master)
+$ cmd git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+Microsoft Windows [version 10.0.18363.1198]
+(c) 2019 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\user\Desktop\my project>git push -w origin master
+error: unknown switch `w'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\user\Desktop\my project>git push - u origin master
+error: src refspec u does not match any
+error: src refspec origin does not match any
+error: src refspec master does not match any
+error: failed to push some refs to '-'
+
+C:\Users\user\Desktop\my project>dir >test2.html
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        localisation.txt
+        test2.html
+
+
+C:\Users\user\Desktop\my project>git add .
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   localisation.txt
+        new file:   test1.txt
+        new file:   test2.html
+
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@DESKTOP-DK0U149.(none)')
+
+C:\Users\user\Desktop\my project>git config --global user.email"aziziabdelkerim@gmail.gmail"
+
+C:\Users\user\Desktop\my project>Cgit config --global user.email"abdelkarim"
+'Cgit' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\user\Desktop\my project>git config --global user.email"abdelkarim"
+
+C:\Users\user\Desktop\my project>git config --global user.name"abdelkarim"
+
+C:\Users\user\Desktop\my project>git remote add origin
+
+C:\Users\user\Desktop\my project>git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aziziabdelkerim/git-project2020.git'
+
+C:\Users\user\Desktop\my project>git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aziziabdelkerim/git-project2020.git'
+
+C:\Users\user\Desktop\my project>git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+fatal: remote origin already exists.
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   localisation.txt
+        new file:   test1.txt
+        new file:   test2.html
+
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@DESKTOP-DK0U149.(none)')
+
+C:\Users\user\Desktop\my project>git config --global user.email "aziziabdelkerim@gmail.com"
+
+C:\Users\user\Desktop\my project>git config --global user.name "abdelkarim"
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+[master (root-commit) d8cf54e] bonsoir
+ 3 files changed, 23 insertions(+)
+ create mode 100644 localisation.txt
+ create mode 100644 test1.txt
+ create mode 100644 test2.html
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\user\Desktop\my project>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 805 bytes | 402.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aziziabdelkerim/git-project2020.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\user\Desktop\my project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+user@DESKTOP-DK0U149 MINGW64 ~/Desktop/my project (master)
+$ cmd git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+Microsoft Windows [version 10.0.18363.1198]
+(c) 2019 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\user\Desktop\my project>git push -w origin master
+error: unknown switch `w'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\user\Desktop\my project>git push - u origin master
+error: src refspec u does not match any
+error: src refspec origin does not match any
+error: src refspec master does not match any
+error: failed to push some refs to '-'
+
+C:\Users\user\Desktop\my project>dir >test2.html
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        localisation.txt
+        test2.html
+
+
+C:\Users\user\Desktop\my project>git add .
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   localisation.txt
+        new file:   test1.txt
+        new file:   test2.html
+
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@DESKTOP-DK0U149.(none)')
+
+C:\Users\user\Desktop\my project>git config --global user.email"aziziabdelkerim@gmail.gmail"
+
+C:\Users\user\Desktop\my project>Cgit config --global user.email"abdelkarim"
+'Cgit' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\user\Desktop\my project>git config --global user.email"abdelkarim"
+
+C:\Users\user\Desktop\my project>git config --global user.name"abdelkarim"
+
+C:\Users\user\Desktop\my project>git remote add origin
+
+C:\Users\user\Desktop\my project>git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aziziabdelkerim/git-project2020.git'
+
+C:\Users\user\Desktop\my project>git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aziziabdelkerim/git-project2020.git'
+
+C:\Users\user\Desktop\my project>git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+fatal: remote origin already exists.
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   localisation.txt
+        new file:   test1.txt
+        new file:   test2.html
+
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@DESKTOP-DK0U149.(none)')
+
+C:\Users\user\Desktop\my project>git config --global user.email "aziziabdelkerim@gmail.com"
+
+C:\Users\user\Desktop\my project>git config --global user.name "abdelkarim"
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+[master (root-commit) d8cf54e] bonsoir
+ 3 files changed, 23 insertions(+)
+ create mode 100644 localisation.txt
+ create mode 100644 test1.txt
+ create mode 100644 test2.html
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\user\Desktop\my project>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 805 bytes | 402.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aziziabdelkerim/git-project2020.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\user\Desktop\my project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+user@DESKTOP-DK0U149 MINGW64 ~/Desktop/my project (master)
+$ cmd git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+Microsoft Windows [version 10.0.18363.1198]
+(c) 2019 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\user\Desktop\my project>git push -w origin master
+error: unknown switch `w'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+
+C:\Users\user\Desktop\my project>git push - u origin master
+error: src refspec u does not match any
+error: src refspec origin does not match any
+error: src refspec master does not match any
+error: failed to push some refs to '-'
+
+C:\Users\user\Desktop\my project>dir >test2.html
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        localisation.txt
+        test2.html
+
+
+C:\Users\user\Desktop\my project>git add .
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   localisation.txt
+        new file:   test1.txt
+        new file:   test2.html
+
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@DESKTOP-DK0U149.(none)')
+
+C:\Users\user\Desktop\my project>git config --global user.email"aziziabdelkerim@gmail.gmail"
+
+C:\Users\user\Desktop\my project>Cgit config --global user.email"abdelkarim"
+'Cgit' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\user\Desktop\my project>git config --global user.email"abdelkarim"
+
+C:\Users\user\Desktop\my project>git config --global user.name"abdelkarim"
+
+C:\Users\user\Desktop\my project>git remote add origin
+
+C:\Users\user\Desktop\my project>git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aziziabdelkerim/git-project2020.git'
+
+C:\Users\user\Desktop\my project>git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\user\Desktop\my project>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/aziziabdelkerim/git-project2020.git'
+
+C:\Users\user\Desktop\my project>git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+fatal: remote origin already exists.
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   localisation.txt
+        new file:   test1.txt
+        new file:   test2.html
+
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@DESKTOP-DK0U149.(none)')
+
+C:\Users\user\Desktop\my project>git config --global user.email "aziziabdelkerim@gmail.com"
+
+C:\Users\user\Desktop\my project>git config --global user.name "abdelkarim"
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+[master (root-commit) d8cf54e] bonsoir
+ 3 files changed, 23 insertions(+)
+ create mode 100644 localisation.txt
+ create mode 100644 test1.txt
+ create mode 100644 test2.html
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\user\Desktop\my project>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 805 bytes | 402.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aziziabdelkerim/git-project2020.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\user\Desktop\my project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$ cmd git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+Microsoft Windows [version 10.0.18363.1198]
+(c) 2019 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\user\Desktop\my project>dir >test2.html
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        localisation.txt
+        test2.html
+
+
+C:\Users\user\Desktop\my project>git add .
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   localisation.txt
+        new file:   test1.txt
+        new file:   test2.html
+
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  
+
+C:\Users\user\Desktop\my project>git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+C:\Users\user\Desktop\my project>git remote add origin https://github.com/aziziabdelkerim/git-project2020.git
+fatal: remote origin already exists.
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   localisation.txt
+        new file:   test1.txt
+        new file:   test2.html
+
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@DESKTOP-DK0U149.(none)')
+
+C:\Users\user\Desktop\my project>git config --global user.email "aziziabdelkerim@gmail.com"
+
+C:\Users\user\Desktop\my project>git config --global user.name "abdelkarim"
+
+C:\Users\user\Desktop\my project>git commit -m"bonsoir"
+[master (root-commit) d8cf54e] bonsoir
+ 3 files changed, 23 insertions(+)
+ create mode 100644 localisation.txt
+ create mode 100644 test1.txt
+ create mode 100644 test2.html
+
+C:\Users\user\Desktop\my project>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\user\Desktop\my project>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 805 bytes | 402.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aziziabdelkerim/git-project2020.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\user\Desktop\my project>

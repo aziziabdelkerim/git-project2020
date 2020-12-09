@@ -1,0 +1,15 @@
+ Le volume dans le lecteur C n'a pas de nom.
+ Le num‚ro de s‚rie du volume est 9AAF-1049
+
+ R‚pertoire de C:\Users\user\Desktop\my project
+
+09/12/2020  19:47    <DIR>          .
+09/12/2020  19:47    <DIR>          ..
+07/12/2020  21:11            23ÿ077 commande.txt
+07/12/2020  21:37                54 localisation.txt
+09/12/2020  19:15    <DIR>          Nouveau dossier
+07/12/2020  19:40               379 test1.txt
+07/12/2020  20:41               481 test2.html
+09/12/2020  19:49                 0 test5.txt
+               5 fichier(s)           23ÿ991 octets
+               3 R‚p(s)  174ÿ663ÿ213ÿ056 octets libres

@@ -1,0 +1,16 @@
+Branching And Merging
+
+1/ What are branches 
+2/ how to create branch
+3/how to checkout branch
+4/ how to merge branch to master 
+5/ how to delete branch (local and Remote)
+
+1/ create branch 
+
+C:\Users\user\Desktop\my project>git branch "branch name"
+
+2/ checkout branch
+
+C:\Users\user\Desktop\my project>git checkout "branch name"
+
